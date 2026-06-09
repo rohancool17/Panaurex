@@ -363,6 +363,28 @@ body.dark-mode .site-header {
 .logo-link {
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-left: 12px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: flex-start;
+    transition: font-size var(--transition-normal);
+}
+
+.logo-text sup {
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-left: 2px;
+    top: -0.1em;
 }
 
 .header-logo {
@@ -373,6 +395,10 @@ body.dark-mode .site-header {
 
 .header-scrolled .header-logo {
     height: 40px;
+}
+
+.header-scrolled .logo-text {
+    font-size: 18px;
 }
 
 .nav-menu {
@@ -1586,6 +1612,14 @@ body.dark-mode .circle-icon-secondary {
     margin-bottom: 0;
 }
 
+.copyright sup {
+    font-size: 8px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-left: 1px;
+    vertical-align: super;
+}
+
 .footer-bottom-container a {
     color: #64748b;
 }
@@ -1683,6 +1717,11 @@ body.dark-mode .circle-icon-secondary {
 
 /* Mobile Large / Small Tablet (576px to 767px) */
 @media (max-width: 767px) {
+    .logo-text {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
     /* Mobile Menu Drawer Animation Trigger */
     .mobile-menu-toggle {
         display: flex;
