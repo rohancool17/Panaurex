@@ -79,7 +79,7 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-bg);
-    overflow-x: hidden;
+    overflow-x: clip;
     transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
@@ -1949,3 +1949,12 @@ body.light-mode .division-image-wrapper {
         width: 100%;
     }
 }
+
+/* Extra Small Mobile Screens (less than 360px) */
+@media (max-width: 360px) {
+    .logo-text {
+        font-size: 14px;
+        margin-left: 6px;
+    }
+}
+
