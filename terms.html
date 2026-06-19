@@ -19,6 +19,30 @@
     
     <!-- Custom style tweaks for the reading page -->
     <style>
+        @media (max-width: 1023px) {
+            :root {
+                --header-height: 70px !important;
+            }
+            .site-header {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 70px !important;
+                transform: none !important;
+                will-change: auto !important;
+                background-color: var(--color-bg) !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+            }
+            .header-logo, .header-scrolled .header-logo {
+                height: 40px !important;
+            }
+            .logo-text, .header-scrolled .logo-text {
+                font-size: 18px !important;
+            }
+        }
+
         .terms-content-card {
             margin-top: calc(var(--header-height) + 40px);
             margin-bottom: 60px;
