@@ -72,6 +72,8 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
     overflow-x: clip;
+    width: 100%;
+    max-width: 100%;
 }
 
 body {
@@ -81,6 +83,9 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
     transition: background-color var(--transition-normal), color var(--transition-normal);
+    overflow-x: clip;
+    width: 100%;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -331,7 +336,8 @@ body.dark-mode .btn-outline:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: auto;
     height: var(--header-height);
     background-color: rgba(248, 250, 252, 0.8);
     backdrop-filter: blur(12px);
@@ -1679,7 +1685,8 @@ body.light-mode .division-image-wrapper {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        right: 0;
+        width: auto;
         padding-top: env(safe-area-inset-top, 0px);
         height: var(--header-height);
         z-index: 99999;
