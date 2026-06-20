@@ -132,7 +132,8 @@ button, input, select, textarea {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: auto;
     height: 100vh;
     overflow: hidden;
     z-index: -1;
@@ -358,6 +359,7 @@ body.dark-mode .site-header {
 
 .nav-container {
     max-width: 1200px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 0 24px;
@@ -1824,12 +1826,14 @@ body.light-mode .division-image-wrapper {
         align-items: center;
         padding: 40px 24px;
         z-index: 999;
-        transition: left var(--transition-normal), background-color var(--transition-normal);
+        transition: left var(--transition-normal), background-color var(--transition-normal), visibility var(--transition-normal);
         overflow-y: auto;
+        visibility: hidden;
     }
     
     .nav-menu.active {
         left: 0;
+        visibility: visible;
     }
     
     .nav-list {
