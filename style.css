@@ -1234,8 +1234,7 @@ body.light-mode .division-image-wrapper {
     color: var(--color-secondary);
     font-weight: 600;
     margin-bottom: 0;
-    word-break: break-all;
-    overflow-wrap: break-word;
+    white-space: nowrap;
 }
 
 /* WhatsApp QR Card */
@@ -1819,6 +1818,20 @@ body.light-mode .division-image-wrapper {
         padding: 20px !important;
     }
 
+    .contact-method {
+        gap: 12px;
+    }
+
+    .contact-icon-box {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .contact-method p, .contact-link {
+        font-size: 15px;
+    }
+
     .privacy-content-card, .terms-content-card, .disclaimer-content-card {
         margin-top: calc(var(--header-height) + 20px) !important;
     }
@@ -1973,6 +1986,10 @@ body.light-mode .division-image-wrapper {
 @media (max-width: 575px) {
     .glass-card {
         padding: 16px !important;
+    }
+    
+    .contact-method p, .contact-link {
+        font-size: 14px;
     }
     
     .qr-header {
