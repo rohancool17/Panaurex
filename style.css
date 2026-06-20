@@ -1205,6 +1205,11 @@ body.light-mode .division-image-wrapper {
     margin-bottom: 0;
 }
 
+.contact-method > div:last-child {
+    min-width: 0;
+    flex: 1;
+}
+
 .contact-icon-box {
     width: 44px;
     height: 44px;
@@ -1229,6 +1234,8 @@ body.light-mode .division-image-wrapper {
     color: var(--color-secondary);
     font-weight: 600;
     margin-bottom: 0;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 /* WhatsApp QR Card */
@@ -1246,6 +1253,11 @@ body.light-mode .division-image-wrapper {
     text-align: left;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.qr-header > div:last-child {
+    min-width: 0;
+    flex: 1;
 }
 
 .whatsapp-logo {
@@ -1292,7 +1304,8 @@ body.light-mode .division-image-wrapper {
 
 .qr-code-img {
     width: 220px;
-    height: 220px;
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -1802,6 +1815,10 @@ body.light-mode .division-image-wrapper {
 
 /* Mobile Large / Small Tablet (576px to 767px) */
 @media (max-width: 767px) {
+    .glass-card {
+        padding: 20px !important;
+    }
+
     .privacy-content-card, .terms-content-card, .disclaimer-content-card {
         margin-top: calc(var(--header-height) + 20px) !important;
     }
@@ -1954,6 +1971,17 @@ body.light-mode .division-image-wrapper {
 
 /* Mobile Small (less than 576px) */
 @media (max-width: 575px) {
+    .glass-card {
+        padding: 16px !important;
+    }
+    
+    .qr-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
     .section-title {
         font-size: 28px;
     }
